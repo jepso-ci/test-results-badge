@@ -14,15 +14,15 @@ function statusImage(x, y, width, height, text) {
   } else if (text === 'failed') {
     return icons.fail({x: x, y: y, width: width, height: height});
   } else if (match = /^testing (.*)$/.exec(text)) {
-    buf.push(' viewBox="0 0 350 100" style="font-family: Helvetica;">');
-    buf.push(icons.pending({x:0, y:0, width: 100, height: 100}));
-    buf.push('<text x="110" y="90" style="font-size:85px;">', match[1], '</text>');
-  } else if (match = /^(.*)\/(.*)$/.exec(text)) {
     buf.push(' viewBox="0 0 350 200" style="font-family: Helvetica;">');
-    buf.push(icons.pass({x:0, y:0, width: 100, height: 100}));
-    buf.push('<text x="110" y="90" style="font-size:85px; fill: green;">', match[1], '</text>');
-    buf.push(icons.fail({x:0, y:100, width: 100, height: 100}));
-    buf.push('<text x="110" y="190" style="font-size:85px; fill: red;">', match[2], '</text>');
+    buf.push(icons.pending({x:0, y:0, width: 100, height: 200}));
+    buf.push('<text x="110" y="150" style="font-size:150px;">', match[1], '</text>');
+  } else if (match = /^(.*)\/(.*)$/.exec(text)) {
+    buf.push(' viewBox="0 0 350 300" style="font-family: Helvetica;">');
+    buf.push(icons.pass({x:0, y:0, width: 100, height: 150}));
+    buf.push('<text x="110" y="125" style="font-size:125px; fill: green;">', match[1], '</text>');
+    buf.push(icons.fail({x:0, y:150, width: 100, height: 150}));
+    buf.push('<text x="110" y="275" style="font-size:125px; fill: red;">', match[2], '</text>');
   } else {
     throw new Error('Invalid status test');
   }
@@ -67,9 +67,11 @@ function statusBadge(x, y, width, height, results) {
   return buf.join('');
 }
 
-function jepsoBadge(results) {
+function jepsoBadge(results, width, height) {
+  width = width || 320;
+  height = height || 120;
   var buf = [];
-  buf.push('<svg width="810" height="260" xmlns="http://www.w3.org/2000/svg" ');
+  buf.push('<svg width="' + width + '" height="' + height + '" xmlns="http://www.w3.org/2000/svg" ');
   buf.push(' viewBox="0 0 405 130">');
   buf.push('<text x="405" y="10" style="font-size: 10; text-anchor: end">JEPSO-CI status</text>');
   buf.push('<line x1="1.5" x2="403.5" y1="17" y2="17" style="stroke: #C00080; stroke-width: 10px;" />');
