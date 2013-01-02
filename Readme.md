@@ -3,7 +3,13 @@
 
   Badge for the test results of a cross browser test, something like:
 
-![badge](https://s3-eu-west-1.amazonaws.com/forbes-public/test-results-badge.svg)
+Defualt size:
+
+![small](https://jepso-ci.com/api/proxy/jepso-ci/test-results-badge/master/test/small.svg)
+
+Larger:
+
+![large](https://jepso-ci.com/api/proxy/jepso-ci/test-results-badge/master/test/large.svg)
 
 ## Installation
 
