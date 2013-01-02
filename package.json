@@ -1,6 +1,6 @@
 {
   "name": "test-results-badge",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Badge for the test results of a cross browser test",
   "main": "index.js",
   "scripts": {
