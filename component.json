@@ -2,7 +2,7 @@
   "name": "test-results-badge",
   "repo": "jepso-ci/test-results-badge",
   "description": "Badge for the test results of a cross browser test",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "keywords": [],
   "dependencies": {
     "jepso-ci/browser-logos": "*"
