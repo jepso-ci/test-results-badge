@@ -10,9 +10,11 @@ function statusImage(x, y, width, height, text) {
   if (text === 'passed') {
     return icons.pass({x: x, y: y, width: width, height: height});
   } else if (text === 'queued') {
-    return icons.pending({x: x, y: y, width: width, height: height});
+    return icons.queued({x: x, y: y, width: width, height: height});
   } else if (text === 'failed') {
     return icons.fail({x: x, y: y, width: width, height: height});
+  } else if (text === 'testing null') {
+    return icons.pending({x: x, y: y, width: width, height: height});
   } else if (match = /^testing (.*)$/.exec(text)) {
     buf.push(' viewBox="0 0 350 200" style="font-family: Helvetica;">');
     buf.push(icons.pending({x:0, y:0, width: 100, height: 200}));

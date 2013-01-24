@@ -3,7 +3,7 @@ var write = require('fs').writeFileSync;
 var join = require('path').join;
 
 var results = {
-  "chrome": "passed",
+  "chrome": "testing null",
   "buildID": "master",
   "opera": "failed",
   "internet explorer": "8/7",
@@ -11,7 +11,7 @@ var results = {
   "safari": "failed",
   "android": "passed",
   "firefox": "3.5/3.0",
-  "ipad": "passed"
+  "ipad": "queued"
 };
 write(join(__dirname, 'large.svg'), jepsoBadge(results, 1000, 400));
 write(join(__dirname, 'small.svg'), jepsoBadge(results));

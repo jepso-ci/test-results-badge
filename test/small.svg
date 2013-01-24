@@ -79,7 +79,20 @@
 <path fill="url(#yellowShadow)" d="M 228 78 L 127 78 A 50 50 0 0 1 166 97 L 230 81"/>
 </svg>
 <svg x="50" y="50" xmlns="http://www.w3.org/2000/svg" version="1.1" width="50" height="50" viewBox="0 0 60 60">
-<path d="M 4 34 L 20 54 L 54 4" style="stroke: green; stroke-width:5px; fill: none; stroke-linejoin: round" />
+<path d="M 4 30 L 20 30 M 40 30 L 56 30
+M 30 4 L 30 20 M 30 40 L 30 56
+M 11.6 11.6 L 22.93 22.93 M 37.07 37.07 L 48.4 48.4
+M 48.4 11.6 L 37.07 22.93 M 22.93 37.07 L 11.6 48.4" style="stroke: orange; stroke-width:5px; fill: none; stroke-linejoin: round">
+<animateTransform
+attributeName="transform"
+begin="0s"
+dur="4s"
+type="rotate"
+from="0 30 30"
+to="360 30 30"
+repeatCount="indefinite" 
+/>
+</path>
 </svg><svg x="105" y="5" width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 132.72 127.219">
 <g><!--Firefox-->
 <g><!--Globe-->
@@ -356,7 +369,7 @@ repeatCount="indefinite"
 </svg><text x="110" y="150" style="font-size:150px;">5.1</text></svg><svg x="305" y="5" width="40" height="25" xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 101 121">
 <path d="m 28.709,28.63 c 3.516,0 7.758,0.726 12.727,2.179 5.015,1.454 8.343,2.18 9.984,2.18 2.109,0 5.555,-0.82 10.336,-2.461 4.781,-1.64 8.93,-2.461 12.445,-2.461 5.766,0 10.899,1.547 15.399,4.641 2.531,1.781 5.039,4.195 7.523,7.242 -3.75,3.188 -6.492,6.024 -8.226,8.508 -3.141,4.5 -4.711,9.469 -4.711,14.906 0,5.953 1.664,11.32 4.992,16.102 3.328,4.781 7.125,7.804 11.392,9.07 -1.783,5.766 -4.736,11.794 -8.861,18.074 -6.234,9.42 -12.422,14.13 -18.562,14.13 -2.438,0 -5.813,-0.77 -10.125,-2.32 -4.266,-1.55 -7.875,-2.32 -10.828,-2.32 -2.954,0 -6.399,0.8 -10.336,2.39 -3.891,1.64 -7.055,2.46 -9.493,2.46 -7.359,0 -14.578,-6.23 -21.656,-18.7 C 3.631,89.919 0.092,77.825 0.092,65.966 0.09199,54.95 2.7873,45.974 8.1779,39.036 13.615,32.098 20.4589,28.63 28.7089,28.63 M 73.0059,0.927 c 0.187,0.60946 0.305,1.1486 0.352,1.6172 0.046,0.4689 0.07,0.9376 0.07,1.4063 0,3.0001 -0.703,6.281 -2.109,9.844 -1.407,3.562 -3.633,6.867 -6.68,9.914 -2.625,2.578 -5.227,4.312 -7.805,5.203 -1.64,0.516 -4.125,0.914 -7.453,1.195 0.094,-7.125 1.945,-13.289 5.555,-18.492 3.656,-5.203 9.679,-8.7655 18.07,-10.687" />
 </svg><text x="325" y="45" style="font-size: 15px; text-anchor: middle">iPad</text><svg x="350" y="0" xmlns="http://www.w3.org/2000/svg" version="1.1" width="50" height="50" viewBox="0 0 60 60">
-<path d="M 4 34 L 20 54 L 54 4" style="stroke: green; stroke-width:5px; fill: none; stroke-linejoin: round" />
+<circle cx="30" cy="30" r="25" style="stroke: orange; stroke-width:5px; fill: none; stroke-linejoin: round"/>
 </svg><svg x="305" y="55" width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-147 -68 294 343">
 <g fill="#a4c639">
 <use stroke-width="14.4" xlink:href="#android-logo-b" stroke="#FFF"/>

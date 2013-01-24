@@ -13,6 +13,6 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "browser-logos": "~2.0.1"
+    "browser-logos": "~2.1"
   }
 }
